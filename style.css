@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #3fa730;
+    border-radius: 50px;
+}
+
+* {
+    scrollbar-color: #3fa730 #111;
+    scrollbar-width: thin;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #29293b;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-content-div{
+    width: 400px;
+    height: 480px;
+    background-color: #ff8a00;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.login-head-text{
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.login-credentials-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.cred-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.cred-container label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #272639;
+}
+
+.cred-container input{
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 3px solid #fff;
+    padding: 2px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cred-container input:focus{
+    border: 3px solid #272639;
+}
+
+.submit-container input{
+    margin-top: 40px;
+    width: 300px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #3fa730;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.submit-container input:hover{
+    background-color: #272639;
+    cursor: pointer;
+}
+
+.existing-user-btn{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #272639;
+    transition: 0.2s ease-in-out;
+}
+
+.existing-user-btn:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+/*Create account
+----------------------------------------------*/
+.create-acc-div{
+    height: 550px;
+}
+
+.create-chef-acc-div{
+    height: 700px;
+}
+
+.create-chef-text{
+    margin-top: 10px;
+}
+
+.cred-container-chef{
+    margin-top: 10px;
+}
+
+/*Recipe List
+----------------------------------------------*/
+.recipe-head{
+    font-size: 50px;
+    color: #ff8a00;
+    margin-top: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.recipe-head:hover{
+    color: #3fa730;
+    scale: 105%;
+}
+
+.recipe-list-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #272639;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+.recipe-list-body{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.recipe-list-content{
+    width: 300px;
+    height: 450px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    margin-top: 50px;
+}
+
+.recipe-list-content:hover{
+    background-color: #daffd3;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    scale: 105%;
+}
+
+.recipe-photo-div img{
+    width: 200px;
+}
+
+.dishname-div{
+    font-size: 20px;
+    color: #3fa730;
+    font-weight: 600;
+}
+
+.dish-short-desc-div{
+    width: 80%;
+    margin-top: 10px;
+}
+
+.dish-short-desc-div p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.save-icon-div img{
+    width: 40px;
+    transition: 0.2s ease-in-out;
+}
+
+.save-icon-div img:hover{
+    cursor: pointer;
+    filter: invert(56%) sepia(14%) saturate(6956%) hue-rotate(2deg) brightness(105%) contrast(103%);
+}
+
+/*Chef Dashboard
+----------------------------------------------*/
+
+.chef-dash-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #272639;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+.chef-dash-nav{
+    height: 80%;
+    width: 20%;
+    background-color: #fff;
+    margin-left: 50px;
+    border-radius: 10px;
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.chef-dash-entry{
+    padding: 8px 10px;
+    margin-top: 5px;
+}
+
+.chef-dash-entry:hover{
+    cursor: pointer;
+    background-color: #daffd3;
+}
+
+.dsah-nav-active{
+    background-color: #daffd3;
+}
+
+.chef-dash-entry h1{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chef-dash-nav-signout{
+    align-self: center;
+    justify-self: flex-end;
+    margin-top: 400px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ff8a00;
+    border-radius: 10px;
+    padding: 5px 60px;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.chef-dash-nav-signout:hover{
+    background-color: #272639;
+    color: #fff;
+}
+
+.chef-dash-content-div{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-left: 40px;
+}
+
+.chef-greet-div{
+    color: #fff;
+    align-self: flex-end;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.chef-dash-title-div{
+    font-size: 25px;
+    color: #ff8a00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.chef-dash-title-div a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #3fa730;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;   
+}
+
+.chef-dash-title-div a:hover{
+    scale: 105%;
+    background-color: #78a674;
+}
+
+.chef-recipe-list-body{
+    width: 100%;
+}
+
+/*User Dashboard
+----------------------------------------------*/
+
+.add-rev-dash-btn-div{
+    margin-top: 10px;
+}
+
+.add-rev-btn-dash{
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #272639;
+    color: #fff;
+    padding: 2px 20px;
+    border-radius: 20px;
+}
+
+.add-rev-btn-dash:hover{
+    background-color: #787878;
+}
+
+/*Add Review
+----------------------------------------------*/
+
+.review-container{
+    flex-direction: column;
+}
+
+.review-head-text{
+    font-size: 60px;
+}
+
+.review-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.review-textarea{
+    border-radius: 10px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.review-submit-btn{
+    background-color: #3fa730;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+}

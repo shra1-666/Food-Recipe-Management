@@ -328,6 +328,12 @@ html::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
+.user-reviews-headings-div{
+    width: 100%;
+    height: 40px;
+    background-color: #78a674;
+}
+
 /*User Dashboard
 ----------------------------------------------*/
 

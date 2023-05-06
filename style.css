@@ -138,6 +138,18 @@ html::-webkit-scrollbar-thumb {
     margin-top: 10px;
 }
 
+.error{
+    color: rgb(133, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
+    position: fixed;
+    top: 500px;
+}
+
+.login-error{
+    top: 450px;
+}
+
 /*Recipe List
 ----------------------------------------------*/
 .recipe-head{

@@ -10,6 +10,9 @@
   <body>
     <div class="container">
       <div class="login-content-div create-acc-div">
+        <?php if (isset($_GET['error'])) { ?>
+          <p class="error"><?php echo $_GET['error']; ?></p>
+        <?php } ?>
         <div class="login-head">
           <h1 class="login-head-text">Get started</h1>
         </div>

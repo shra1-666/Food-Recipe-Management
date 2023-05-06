@@ -4,26 +4,6 @@ if (empty($_POST["user_name"])) {
     die("Name is required");
 }
 
-//if ( ! filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-   // die("Valid email is required");
-//}
-
-//if (strlen($_POST["password"]) < 5) {
-   // die("Password must be at least 5 characters");
-//}
-
-//if ( ! preg_match("/[a-z]/i", $_POST["password"])) {
-    //die("Password must contain at least one letter");
-//}
-
-//if ( ! preg_match("/[0-9]/", $_POST["password"])) {
-   // die("Password must contain at least one number");
-//}
-
-
-//$password_hash = password_hash($_POST["pass"], PASSWORD_DEFAULT);
-//$timestamp = date('Y-m-d H:i:s');
-
 $mysqli = require "dbConnect.php";
 
 $sql = "INSERT INTO user (user_name, password, email)
@@ -42,20 +22,26 @@ $stmt->bind_param("sss",
                   );
                  
                 
+try{
 if ($stmt->execute()) {
+
+    header("Location: login.html");
+    exit;
     
-    echo "successfully";
-  //  header("Location: login.html");
-    //exit;
+} else {
     
-}// else {
-    
-   // if ($mysqli->errno === 1062) {
-       // die("email already taken");
-    //} else {
-      //  die($mysqli->error . " " . $mysqli->errno);
-   // }
-//}
+    if ($mysqli->errno === 1062) {
+        die("email already taken");
+    } else {
+        die($mysqli->error . " " . $mysqli->errno);
+    }
+}
+}
+
+catch (Exception $e) {
+    echo "Error: " . $e->getMessage();
+    header("Location: register-user.php?error=Already taken");
+}
 ?>
 
 

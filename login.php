@@ -27,13 +27,14 @@ if(isset($_POST['user_name']) && isset($_POST['password'])) {
                 header("Location: user-dashboard.html");
                 exit();
             }else{
-                echo "Incorect User name or password";
-                //header("Location: ../../HTML/sign-in.php?error=Incorect User name or password");
+                //echo "Incorect User name or password";
+                header("Location: login-form.php?error=Incorect User name or password");
                 //echo '<script>alert("Incorrect username or password")</script>';
                 exit();
             }
         }else{
-            echo "Incorect User name or password";
+            //echo "Incorect User name or password";
+            header("Location: login-form.php?error=Incorect User name or password");
             //header("Location: ../../HTML/sign-in.php?error=Incorect User name or password");
             //echo '<script>alert("Incorrect username or password")</script>';
             exit();

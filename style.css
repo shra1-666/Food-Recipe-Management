@@ -130,6 +130,10 @@ html::-webkit-scrollbar-thumb {
     height: 700px;
 }
 
+.create-chef-acc-div p{
+    top: 600px;
+}
+
 .create-chef-text{
     margin-top: 10px;
 }

@@ -47,7 +47,7 @@
                     <input name="password" type="password" placeholder="Enter Password" required>
                 </div>
                 <div class="submit-container cred-container-chef">
-                    <input type="submit" value="Log in">
+                    <input type="submit" value="Sign up">
                 </div>
                 <a class="existing-user-btn" href="login-form-chef.php">Existing User ?</a>
             </form>

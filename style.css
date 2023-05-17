@@ -281,6 +281,11 @@ html::-webkit-scrollbar-thumb {
     font-weight: 600;
 }
 
+.chef-dash-entry a{
+    text-decoration: none;
+    color: #111;
+}
+
 .chef-dash-nav-signout{
     align-self: center;
     justify-self: flex-end;
@@ -347,7 +352,42 @@ html::-webkit-scrollbar-thumb {
 .user-reviews-headings-div{
     width: 100%;
     height: 40px;
-    background-color: #78a674;
+    background-color: #3fa730;
+    display: flex;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.user-reviews-contents-div{
+    background-color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.user-reviews-contents-div:hover{
+    background-color: #c5d4c4;
+    scale: 102%;
+}
+
+.user-reviews-headings-div h2{
+    font-size: 18px;
+    color: #fff;
+}
+
+.user-reviews-contents-div h2{
+    color: #111;
+    font-weight: 500;
+}
+
+.user-head-slno{
+    width: 20%;
+}
+
+.user-head-title{
+    width: 40%;
+}
+
+.user-head-review{
+    width: 40%;
 }
 
 /*User Dashboard
@@ -405,4 +445,56 @@ html::-webkit-scrollbar-thumb {
     padding: 10px;
     border-radius: 20px;
     margin-top: 30px;
+}
+
+.review-submit-btn:hover{
+    background-color: #ff8a00;
+    cursor: pointer;
+}
+
+.chef-add-recipie-form-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.chef-add-recipe-entry-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.chef-add-recipe-entry-div label{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* .chef-add-recipe-entry-div input,textarea{
+    padding: 5px 10px;
+    font-size: 18px;
+    width: 400px;
+    background-color: #ff8a00;
+    outline: none;
+    border: 3px solid #ff8a00;
+    font-weight: 500;
+} */
+
+/* .chef-add-recipe-entry-div input:focus,.chef-add-recipe-entry-div textarea:focus{
+    border: 3px solid #3fa730;
+} */
+
+.add-recipe-submit-btn{
+    margin-top: 40px;
+    background-color: #3fa730;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+}
+
+.add-recipe-submit-btn:hover{
+    background-color: #78a674;
+    cursor: pointer;
 }

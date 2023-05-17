@@ -50,9 +50,9 @@
             />
           </div>
           <div class="submit-container">
-            <input type="submit" value="Log in" />
+            <input type="submit" value="Sign up" />
           </div>
-          <a class="existing-user-btn" href="login.html">Existing User ?</a>
+          <a class="existing-user-btn" href="login-form.php">Existing User ?</a>
         </form>
       </div>
     </div>

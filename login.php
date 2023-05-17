@@ -24,7 +24,8 @@ if(isset($_POST['user_name']) && isset($_POST['password'])) {
             if ($row['user_name'] === $user_name && $row['password'] === $password) {
                 echo "Logged in!";
                 $_SESSION['userName'] = $row['user_name'];
-                header("Location: user-dashboard.html");
+                $_SESSION['userId'] = $row['user_id'];
+                header("Location: user-dashboard.php");
                 exit();
             }else{
                 //echo "Incorect User name or password";

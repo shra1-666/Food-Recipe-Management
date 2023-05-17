@@ -23,8 +23,9 @@ if(isset($_POST['user_name']) && isset($_POST['password'])) {
             $row = mysqli_fetch_assoc($result);
             if ($row['user_id'] === $user_name && $row['password'] === $password) {
                 echo "Logged in!";
-                $_SESSION['userName'] = $row['user_id'];
-                header("Location: chef-dashboard.html");
+                $_SESSION['user_id'] = $row['user_id'];
+                $_SESSION['chef_id'] = $row['chef_id'];
+                header("Location: chef-dashboard.php");
                 exit();
             }else{
                 //echo "Incorect User name or password";

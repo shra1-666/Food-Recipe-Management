@@ -29,7 +29,7 @@
                 <div class="submit-container">
                     <input type="submit" value="Log in">
                 </div>
-                <a class="existing-user-btn" href="/register-user.html">New User ?</a>
+                <a class="existing-user-btn" href="register-user.php">New User ?</a>
             </form>
         </div>
     </div>

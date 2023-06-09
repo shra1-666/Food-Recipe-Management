@@ -224,6 +224,8 @@ html::-webkit-scrollbar-thumb {
     text-align: left;
     font-size: 16px;
     font-weight: 400;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 .save-icon-div img{
@@ -498,3 +500,207 @@ html::-webkit-scrollbar-thumb {
     background-color: #78a674;
     cursor: pointer;
 }
+
+/*Index
+----------------------------------------------*/
+
+.index-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #272639;
+    overflow-x: hidden;
+}
+
+#home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-nav-bar{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 250px;
+}
+
+.dropbtn {
+  background-color: #1FBB54;
+  color: white;
+  padding: 5px 30px;
+  font-size: 16px;
+  border: none;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.index-nav-link{
+    font-size: 18px;
+    text-decoration: none;
+    color: #b1a9a9;
+    font-weight: 500;
+}
+
+.index-nav-link:hover{
+    color: #1FBB54;
+}
+
+.index-home-content-box{
+    width: 100%;
+    display: flex;
+}
+
+.index-home-img-div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-home-img-div img{
+    width: 65%;
+}
+
+.index-home-caption-div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.index-home-caption-div h2{
+    font-size: 70px;
+    color: #fff;
+    line-height: 60px;
+}
+
+.index-home-caption-div h1{
+    font-size: 100px;
+    color: #1FBB54;
+    line-height: 85px;
+}
+
+.index-home-caption-div h1:hover{
+    color: #1fff6a;
+  text-shadow:0px 0px 30px #1fff6a;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+#about{
+    width: 100vw;
+    height: 100vh;
+}
+
+.index-about-head-div h1{
+    font-size: 110px;
+    margin-left: 100px;
+    color: #1FBB54;
+}
+
+.index-about-head-div h1:hover{
+    color: #1fff6a;
+  text-shadow:0px 0px 30px #1fff6a;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.index-about-content-div{
+    width: 100%;
+    padding: 0 250px;
+}
+
+.index-about-content-div p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+    text-justify: inter-word;
+}
+
+#contact{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-contact-content-div{
+    width: 100%;
+    display: flex;
+}
+
+.index-contact-map-div{
+    width: 60%;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.index-contact-contact-details{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    color: #fff;
+    padding-left: 50px;
+    padding-top: 80px;
+}
+
+.index-contact-contact-details h4{
+    margin-top: 20px;
+}
+
+.address-h4{
+    line-height: 35px;
+}
+
+.index-contact-contact-details span{
+    color: #1FBB54;
+}
+
+.recipe-save-btn-new{
+    margin-top: 15px;
+}
+
+/*Index
+----------------------------------------------*/

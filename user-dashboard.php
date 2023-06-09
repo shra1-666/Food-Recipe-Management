@@ -34,7 +34,7 @@ $result = $mysqli->query($sql);
             </div>
             <div class="chef-dash-content-div">
                 <div class="chef-greet-div">
-                    <h2>Hello! <span></span></h2>
+                    <h2>Welcome back !!!<span></span></h2>
                 </div>
                 <div class="chef-dash-title-div">
                     <h2>Saved recipies</h2>
@@ -63,10 +63,7 @@ $result = $mysqli->query($sql);
                     </div>
                     <?php
                         }
-                    ?>
-
-                    
-                    
+                    ?>   
                 </div>
             </div>
     </div>

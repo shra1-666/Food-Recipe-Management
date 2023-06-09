@@ -25,6 +25,7 @@ if(isset($_POST['user_name']) && isset($_POST['password'])) {
                 echo "Logged in!";
                 $_SESSION['userName'] = $row['user_name'];
                 $_SESSION['userId'] = $row['user_id'];
+                $_SESSION['loggedin'] = true;
                 header("Location: user-dashboard.php");
                 exit();
             }else{
